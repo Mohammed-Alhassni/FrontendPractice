@@ -59,8 +59,54 @@
                 </tr>
             </table>
         </section>
-        <section id="registration"></section>
+        <section id="registration">
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="fullName">Full Name: </label>
+                    <br>
+                    <input id="fullName" name="fullName" type="text" required minlength="5" maxlength="10">
+                    <br>
+                    <label for="email">Email: </label>
+                    <br>
+                    <input id="email" name="email" type="email" required>
+                    <br>
+                    <label for="age">Age: </label>
+                    <br>
+                    <input id="age" name="age" type="number" min="10" max="60">
+                    <br>
+                    <label for="age">Hire Date: </label>
+                    <br>
+                    <input id="hireDate" name="hireDate" type="date">
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Employment Details</legend>
+                    <label for="employeeCode">Employee Code: </label>
+                    <br>
+                    <input id="employeeCode" name="employeeCode" type="text" pattern="[a-z A-Z]{3}[0-9]{2}">
+                    <br>
+                    <label for="department">Select Department: </label>
+                    <br>
+                    <select id="department" name="department" required>
+                        <option value="" selected disabled>--Select--</option>
+                        <option value="Human Resources">Human Resource</option>
+                        <option value="Finanical">Finanical</option>
+                        <option value="Operation">Operation</option>
+                    </select>
+                </fieldset>
+                    <br><br>
+                    <button type="submit">
+                        Submit
+                    </button>
+
+                </fieldset>
+            </form>
     </main>
-<footer> &copy; Mohammed Al Hassni</footer>
+    <footer>
+         &copy; Mohammed Al Hassni
+    </footer>
 </body>
 </html>
