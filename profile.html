@@ -62,6 +62,7 @@
         <section id="registration">
             <form>
                 <fieldset>
+                <fieldset>
                     <legend>Personal Information</legend>
 
                     <label for="fullName">Full Name: </label>
@@ -78,7 +79,7 @@
                     <br>
                     <label for="age">Hire Date: </label>
                     <br>
-                    <input id="hireDate" name="hireDate" type="date">
+                    <input id="hireDate" name="hireDate" type="date" required>
                     <br>
                 </fieldset>
                 <br>
@@ -96,13 +97,13 @@
                         <option value="Finanical">Finanical</option>
                         <option value="Operation">Operation</option>
                     </select>
-                    <br>
+                    <br><br>
                     <fieldset>
                         <legend>Employment Type: </legend>
                         <input type="radio" id="full-time" name="EmploymentType" value="full-time" checked>
                         <label for="full-time"> Full Time</label>
                         <br>
-                        <input type="radio" id="part-time" name="EmploymentType" value="part-time" checked>
+                        <input type="radio" id="part-time" name="EmploymentType" value="part-time">
                         <label for="part-time">Part Time </label>
                     </fieldset>
                     <br>
@@ -114,11 +115,24 @@
                         <input type="checkbox" id="bonus" name="Benfits" value="Bonus">
                         <label for="bonus">Bonus</label>
                     </fieldset>
-                </fieldset>
+                    <br>
+                    <input type="file" accept=".pdf, .doc, .docx">
                     <br><br>
-                    <button type="submit">
-                        Submit
-                    </button>
+                    <label for="employeeId">Employee ID: </label>
+                    <input id="employeeId" type="text" value="123" readonly>
+                    <br><br>
+                    <label for="legacyField">Legacy Field: </label>
+                    <input id="legacyField" type="text" value="111" disabled>
+                </fieldset>
+                <br>
+                <button type="submit">
+                    Submit
+                </button>
+                <br><br>
+                <button type="reset">
+                    Reset
+                </button>
+                </fieldset>
             </form>
     </main>
     <footer>
